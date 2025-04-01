@@ -6,7 +6,8 @@ The objective of this study is to identify homogeneous regions in Texas, which c
 Data and idea of the project provided by Dr. Michael Tiefelsdorf, Associate Professor of Geospatial Information Sciences at University fo Texas at Dallas. More information about the data and the Texas counties can be found at Disparities in COVID-19 Vaccination Rates among the Counties of Texas (spatialfiltering.com). Study the article by M. Chavent, V. Kuentz-Simonet, A. Labenne, J. Saracco. ClustGeo: An R package for hierarchical clustering with spatial constraints.
 
 For spatial clustering of the counties in Texas, I have included the following 19 variables/features across 3 domains:
-[a] Demographic features: **
+
+**[a] Demographic features: **
 * WHINOHISP : Proportion of White non-Hispanic population (Caucasian population)
 * HISPORG : Proportion of population with Hispanic ethnic background
 * PARTASIAN : Proportion of any part Asian population
@@ -65,21 +66,35 @@ Number of uninsured people are highest in cluster 7, which can be due to high nu
 
 **Socioeconomic factors:**
 Median value of homes was highest in clusters 6 & 8. It seems reasonable since these are the clusters representing the hill country region and the 3 metropolitan cities of Austin, Dallas, and Houston which have seen a greater growth in population in recent years with people moving to these areas in high numbers, which explains the increase in demand and hence the house prices. 
+
 In terms of income, clusters 6 & 8 had the highest income and employment rate. Cluster 5 is closer to the metropolitan areas so is the hub of transportation between the major economic centers of Texas and therefor has more income than cluster 1.
+
 Unemployment rate is less in clusters 2, 4 and 6. Cluster 2 is the oil country, and cluster 4 & 6 are the industrial belt of Texas, including the agricultural plains which are hub for wheat and cotton production. 
+
 Unemployment rate is high in bordering counties represented in cluster 7, followed by cluster 3 and 1, which are all bordering counties and have high population of Hispanic-origin immigrants and Black population.  
+
 College education is highest in clusters 8 and 6 which are metropolitan and metropolitan-surrounding regions and have a high presence of universities. It is lowest in cluster 7 bordering Mexico and also low in clusters 1 & 2, the eastern border region and the oil country, respectively. 
+
 Crime rate is high in clusters 2 & 7, and less in clusters 4 & 6.
+
 And the population is highest in the metropolitan cities (cluster 8) and the counties connecting them (cluster 5). 
 
 **Description of each identified region in terms of its profile of characteristic:**
-Region 1: The region bordering the Eastern states of Louisiana, Arkansas, and Oklahoma, has been a historically slave-owning belt and has a high concentration of Black population along with the White population. It has high timber production, but also has high unemployment, low percent of people with college degree, low income, a high Republican voter base, and low Covid-19 full vaccination rtes.
+Region 1: The region bordering the Eastern states of Louisiana, Arkansas, and Oklahoma, has been a historically slave-owning belt and has a high concentration of Black population along with the White population. It has high timber production, but also has high unemployment, low percent of people with college degree, low income, a high Republican voter base, and low Covid-19 full vaccination rates.
+
 Region 2: The oil country of Texas which has an abundance of oil fields. It is characterized by low unemployment, low percent of people with college education, high percent of Trump voters, has some counties with a high Hispanic population.
+
 Region 3: It is segregated into 2 parts: Gulf coastal plain region and the big bend country. The characteristics of this region are High Hispanic population but not as high as cluster 7, high unemployment rate, with mostly Republican voters but some counties turning Blue in 2020 presidential elections, shown in a little drop in republican vote % and increase in Democrat vote % compared to 2016.
+
 Region 4: The part of panhandle plains which is the main agricultural region of Texas. It is characterized by high Trump voter % in 2020 elections, high White population, higher median age or people, slightly lower median home values, average median income but low unemployment rate because of cotton industry and croplands.
+
 Region 5: The region connecting the 3 big metro cities, it also has a high population but not as high as the 3 metro cities. It has a high Asian and Black population, and some features common with the big metropolitan regions but they have a more Republican voter base (it’s turning blue from 2016-2020). 
+
 Region 6: Has a high white population, it is the neighboring region of the Austin metroplex. It has a high republican vote %. It has among the highest median home value (almost at par with the 3 metropolitan cities) and high median age as well as a high Covid full vaccination rate. It has high income, low unemployment, low crime rate and a high % of college educated population.
+
 Region 7: It is segregated into 2 non-contiguous parts: the south Texas plains and upper part of the Big Bend country. It has the highest Hispanic population as it is bordering Mexico. It has the highest vaccination rate for Covid 19, but also the highest number of uninsured people.
+
 The reason why it is segregated from region 3 is because it has higher Hispanic population and very less White population compared to cluster 3. It also has a low median age with a very low % of them having a college education or a health insurance. They have the lowest income and a high unemployment rate. They have a lower % of owner-occupied homes and lower median value of homes. It saw an increase in Republican vote share in 2020 though it is traditionally a blue or democrat voter base, it also saw a fall in voter turnout in 2020.  
+
 Region 8: It is the metropolitan cluster comprising of 3 big metropolitan regions of Dallas, Austin, and Houston. Their characteristics are low median age, very high income, highest population and population density in Texas, a high vaccine rate for Covid-19, highest median home values in Texas, highest number of people with a college degree and highest increase in democratic vote share % from 2016-2020 and high % of democratic party voters in 2020. In terms of demographics, it has a high white population but not as high as certain other clusters because it has a more diverse population comprising of Black, Hispanic, and Asian populations.
 
