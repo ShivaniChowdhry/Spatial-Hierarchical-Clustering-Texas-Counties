@@ -3,31 +3,33 @@ Decoding Socio-Political Landscape of Texas Counties Using Spatial Hierarchical 
 
 The objective of this study is to identify homogeneous regions in Texas, which comprise of similar and spatially adjacent counties. These regions should be homogenous with respect to their [a] cultural, [b] political, [c] socio-economic, [d] demographic and [e] residential characteristics. This classification can be used by either a political scientist or strategist or a public health administrator to know which clusters are common in terms of the demographic and socioeconomic factors and how they can target them to achieve greater vote share by addressing their specific issue in election campaigns or how they can design better insurance program or vaccination rollout campaigns for them. Economists and policymakers can also use this clustering information to know the socioeconomic conditions and demographic profiles of people living in each cluster.
 
- Data and idea of the project provided by Dr. Michael Tiefelsdorf, Associate Professor of Geospatial Information Sciences at University fo Texas at Dallas. More information about the data and the Texas counties can be found at Disparities in COVID-19 Vaccination Rates among the Counties of Texas (spatialfiltering.com). Study the article by M. Chavent, V. Kuentz-Simonet, A. Labenne, J. Saracco. ClustGeo: An R package for hierarchical clustering with spatial constraints.
+Data and idea of the project provided by Dr. Michael Tiefelsdorf, Associate Professor of Geospatial Information Sciences at University fo Texas at Dallas. More information about the data and the Texas counties can be found at Disparities in COVID-19 Vaccination Rates among the Counties of Texas (spatialfiltering.com). Study the article by M. Chavent, V. Kuentz-Simonet, A. Labenne, J. Saracco. ClustGeo: An R package for hierarchical clustering with spatial constraints.
 
 For spatial clustering of the counties in Texas, I have included the following 19 variables/features across 3 domains:
 **[a] Demographic features: **
-WHINOHISP : Proportion of White non-Hispanic population (Caucasian population)
-HISPORG : Proportion of population with Hispanic ethnic background
-PARTASIAN : Proportion of any part Asian population
-PARTBLACK : Proportion of any part Afro-American population
-MEDAGE : Median age of population in county
+* WHINOHISP : Proportion of White non-Hispanic population (Caucasian population)
+* HISPORG : Proportion of population with Hispanic ethnic background
+* PARTASIAN : Proportion of any part Asian population
+* PARTBLACK : Proportion of any part Afro-American population
+* MEDAGE : Median age of population in county
+
 **[b] Socio-economic features: **
-FullVacRate : % of population with full vaccination for Covid-19
-CrudeMort : Crude mortality arte for covid-19 in each county
-UNINSURED : Proportion of uninsured population
-MEDVALHOME : Median value in $ of owner-occupied housing units
-OWNOCCPCT : Percent of owner-occupied housing unit
-INCOME : Per capita income ($)
-UNEMPL : Proportion of population in labor force who are currently unemployed
-COLLEGEDEG : Proportion of population 25+ who do have a college degree and above
-CRIMERATE : Crime rate per 100.000 population in a county (2015)
-POP2020 : Total population by county as of 2020
+* FullVacRate : % of population with full vaccination for Covid-19
+* CrudeMort : Crude mortality arte for covid-19 in each county
+* UNINSURED : Proportion of uninsured population
+* MEDVALHOME : Median value in $ of owner-occupied housing units
+* OWNOCCPCT : Percent of owner-occupied housing unit
+* INCOME : Per capita income ($)
+* UNEMPL : Proportion of population in labor force who are currently unemployed
+* COLLEGEDEG : Proportion of population 25+ who do have a college degree and above
+* CRIMERATE : Crime rate per 100.000 population in a county (2015)
+* POP2020 : Total population by county as of 2020
+
 **[c] Electoral features relating to 2016 and 2020 presidential elections: **
-TRUMPPCT20 : Trump vote percent in 20202 elections
-REPDIFF : Difference in Vote % for Trump or GOP in 2020 and 2018 presidential elections
-DEMDIFF : Difference in vote % of democratic party candidates in 2020 and 2016 presidential elections
-TURNOUTDIFF : Difference in turnout between 20202 and 2016 elections
+* TRUMPPCT20 : Trump vote percent in 20202 elections
+* REPDIFF : Difference in Vote % for Trump or GOP in 2020 and 2018 presidential elections
+* DEMDIFF : Difference in vote % of democratic party candidates in 2020 and 2016 presidential elections
+* TURNOUTDIFF : Difference in turnout between 20202 and 2016 elections
 
 I converted all the count variables into rates using the formulas described in the code in the appendix below, before using them to calculate feature dissimilarity matrix. 
 
