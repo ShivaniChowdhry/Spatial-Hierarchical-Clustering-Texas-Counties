@@ -6,7 +6,7 @@ The objective of this study is to identify homogeneous regions in Texas, which c
 Data and idea of the project provided by Dr. Michael Tiefelsdorf, Associate Professor of Geospatial Information Sciences at University fo Texas at Dallas. More information about the data and the Texas counties can be found at Disparities in COVID-19 Vaccination Rates among the Counties of Texas (spatialfiltering.com). Study the article by M. Chavent, V. Kuentz-Simonet, A. Labenne, J. Saracco. ClustGeo: An R package for hierarchical clustering with spatial constraints.
 
 For spatial clustering of the counties in Texas, I have included the following 19 variables/features across 3 domains:
-**[a] Demographic features: **
+[a] Demographic features: **
 * WHINOHISP : Proportion of White non-Hispanic population (Caucasian population)
 * HISPORG : Proportion of population with Hispanic ethnic background
 * PARTASIAN : Proportion of any part Asian population
@@ -25,7 +25,7 @@ For spatial clustering of the counties in Texas, I have included the following 1
 * CRIMERATE : Crime rate per 100.000 population in a county (2015)
 * POP2020 : Total population by county as of 2020
 
-**[c] Electoral features relating to 2016 and 2020 presidential elections: **
+**[c] Electoral features relating to 2016 and 2020 presidential elections:**
 * TRUMPPCT20 : Trump vote percent in 20202 elections
 * REPDIFF : Difference in Vote % for Trump or GOP in 2020 and 2018 presidential elections
 * DEMDIFF : Difference in vote % of democratic party candidates in 2020 and 2016 presidential elections
@@ -44,14 +44,18 @@ Screeplot with K=8 & dendrogram with alpha=0.15: This is the final clustering wh
 
 **Electoral factors:**
 Highest increase in Republican vote percent over 2016-2020 was seen in region 7 and a decrease in Trump vote percent was seen in cluster 8. On the contrary, Democrats vote percent change over 2016-2020 saw highest increase in cluster 8 and lowest in cluster 7. This was true as some counties in the cluster 7 (represented by the South Texas belt bordering Mexico with a high Hispanic population) turned “red” (won by Republican Party) in the 2020 election, and Democrat vote share increased in the three metropolitan regions of Dallas, Austin, and Houston (Cluster 8, hereafter called “metropolitan cities cluster”).
-In case of turnout change from 2016-2020, increase in turnout was seen in clusters 6 and 8 and a decrease was seen in cluster 7. 
-Trump vote percent in 2020 was highest in the Texas Panhandle region or Cluster 4 and lowest in clusters 7 (South Texas & big bend county) and 8 (metropolitan cities cluster).
+
+In case of turnout change from 2016-2020, increase in turnout was seen in clusters 6 and 8 and a decrease was seen in cluster 7. Trump vote percent in 2020 was highest in the Texas Panhandle region or Cluster 4 and lowest in clusters 7 (South Texas & big bend county) and 8 (metropolitan cities cluster).
 
 **Demographic factors:**
 In terms of demographics, White population is highest in clusters 1, 4 and 6, and lowest in cluster 7. 
+
 Hispanic population is highest in cluster 7 (bordering Mexico) followed by clusters 2 & 3 (bordering Mexico), and lowest in cluster 1.
+
 Asian population is highest in the metropolitan cluster 8, followed by cluster 5. 
+
 Black population is highest in clusters 5 and 1, followed by the metropolitan cluster 8. Clusters 1 & 5 are closest to the historically slave owning regions of Texas, so they have a high Black population. 
+
 Median age is highest in clusters 6 an lowest in cluster 8, followed by clusters 7 and 2. 
 
 **Health-related factors:**
